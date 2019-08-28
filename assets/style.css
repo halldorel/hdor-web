@@ -1,0 +1,285 @@
+
+/*********************************/
+
+*, *::after, *::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  font-family: monospace;
+  --s1: 2rem;
+  --measure: 50ch;
+}
+
+.cluster {
+  --space: var(--s1);
+  overflow: hidden;
+}
+
+.cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: calc(var(--space) / 2 * -1)
+}
+
+.cluster > * > * {
+  flex-basis: var(--measure);
+  border: 2px dashed #222;
+  margin: calc(var(--space) / 2);
+}
+
+.box {
+  padding: var(--s1);
+}
+
+.stack > * + * {
+  margin-top: var(--s1);
+}
+
+.cluster img {
+  border: 2px solid #000;
+  height: 0;
+  padding-bottom: 60%;
+  width: 100%;
+  background: repeating-linear-gradient( 
+    -45deg,
+    #fff,
+    #fff 35px,
+    #222 35px,
+    #222 80px
+  );
+  /* Demo til að sýna hvernig ljósmyndir gætu virkað með þessum reglum */
+  
+  background-image: url('https://images.unsplash.com/photo-1566873553472-c8191d937026?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3668&q=80');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.projects > *{
+  position: relative;
+  overflow: hidden;
+  border: 0;
+}
+.projects img {
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin-top: 0;
+  border: 0;
+  transition: opacity 80ms ease;
+  /* background-position: bottom; */
+}
+.projects > *:hover > img {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/********/
+
+/*
+xs: (12)    font-size: 0.75rem;
+sm: (14)    font-size: 0.875rem;
+xl: (24)    font-size: 1.5rem;
+*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background: #fdfdfd;
+}
+
+main {
+    padding: 0 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header span {
+    width: 0px;
+    margin-left: 2rem;
+    font-size:  0.875rem;
+}
+
+h1.site {
+    font-size: 2.0em;
+}
+
+h1.site {
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+section {
+    font-size: 0.75rem;
+    padding: 2rem;
+}
+
+p {
+    line-height: 1.125rem;
+}
+
+nav {
+    text-transform: uppercase;
+    padding: 0 2rem;
+}
+nav ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+nav li {
+    display: inline;
+}
+nav li + li {
+    margin-left: 1rem;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.junkbox {
+    background-image: url('graphic.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 80%;
+    position: relative;
+}
+.junkbox p {
+    max-width: 36%;
+}
+.try-or-buy {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.try-or-buy input[type="submit"] {
+    background: white;
+    color: black;
+}
+.try-or-buy a {
+    text-decoration: underline;
+}
+.try-or-buy a::after {
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 0;
+    transform: translateY(3px);
+    margin-left: 0.5rem;
+    border-style: solid;
+    border-width: 7px 0 7px 14px;
+    border-color: transparent transparent transparent #000000;
+}
+
+.newsletter-cta {
+    padding-top: 1.5rem;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    text-align: center;
+    
+    max-width: 600px;
+}
+.newsletter-cta p {
+    max-width: 20rem;
+    margin: 0 auto;
+}
+.newsletter-cta form {
+    margin: 1rem auto 0 auto;
+    max-width: 16.25rem;
+    display: flex;
+    flex-direction: column;
+}
+.newsletter-cta form input + input{
+    margin-top: 0.5rem;
+}
+
+input {
+    height: 1.875rem;
+    border: 1px solid black;
+    margin: 0 0 1rem 0;
+    padding: 0 0.5rem;
+    color: black;
+    background-color: white;
+    font-family: 'Space Mono';
+    font-size: 1.0em;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+  font-family: 'Space Mono';
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Space Mono';
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Space Mono';
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Space Mono';
+  color: black;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background: black;
+    color: white;
+    margin: 0 0 2rem 0;
+}
+
+input[type="submit"]:hover {
+    background: white;
+    color: black;
+}
+
+.post-content p {
+    line-height: 1.5em;
+    max-width: 600px;
+}
+
+.projects {
+
+}
+
+.project-card {
+
+}
+

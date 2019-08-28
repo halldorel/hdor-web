@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title:  "STRATUS"
 date:   2018-03-29 12:40:17 +0000
 categories: project collaboration

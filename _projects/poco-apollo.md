@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: project
 title:  "Poco Apollo"
 date:   2018-03-29 12:40:17 +0000
-categories: project generative
+categories: generative music
 cover_photo: /assets/img/poco-apollo.jpg
 excerpt: 'Online music composition, using generative algorithms to create short music pieces '
 ---

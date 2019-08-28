@@ -1,0 +1,15 @@
+<section class="cluster">
+    <ul class="box">
+        {% for project in site.projects %}
+        <li class="box stack">
+            <a href="{{ project.url }}">
+                <h2>{{ project.title }}</h2>
+                <img style="background-image: url('{{ project.cover_photo }}')" />
+                <p>
+                    {{ project.excerpt }}
+                </p>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
