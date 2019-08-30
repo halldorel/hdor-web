@@ -3,16 +3,15 @@
 
   {%- include head.html -%}
 
-  <body>
-    {%- include header.html -%}
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+  <body class="center box stack">
+    <!-- <div class="center"> -->
+      {%- include header.html -%}
+      <main class="page-content stack" aria-label="Content">
+          {{ content }}
+      </main>
 
-    {%- include footer.html -%}
-
+      {%- include footer.html -%}
+    <!-- </div> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77665985-1"></script>
     <script>

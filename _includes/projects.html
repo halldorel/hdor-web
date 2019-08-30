@@ -1,10 +1,12 @@
-<section class="cluster">
-    <ul class="box">
+<section class="projects cluster">
+    <ul class="">
         {% for project in site.projects %}
-        <li class="box stack">
+        <li class="box">
             <a href="{{ project.url }}">
                 <h2>{{ project.title }}</h2>
-                <img style="background-image: url('{{ project.cover_photo }}')" />
+                <figure class="frame">
+                    <img src="{{ project.cover_photo }}" />
+                </figure>
                 <p>
                     {{ project.excerpt }}
                 </p>

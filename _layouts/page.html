@@ -3,14 +3,13 @@ layout: default
 ---
 <header class="cover-photo" style="background-image: url('{{ page.cover_photo }}')"></header>
 
-<article class="post">
+<article class="post stack-small">
     <h1 class="post-title">{{ page.title | escape }}</h1>
 
   <div class="post-content">
     {{ content }}
   </div>
 
-  
-    {% include mailing.html %}
-
 </article>
+
+{% include mailing.html %}
