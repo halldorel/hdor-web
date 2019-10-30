@@ -1,6 +1,6 @@
 <section class="cluster">
     <ul class="box">
-        {% for project in site.projects %}
+        {% for project in site.projects | sort: "date", "last" %}
         <li class="box stack">
             <a href="{{ project.url }}">
                 <h2>{{ project.title }}</h2>
