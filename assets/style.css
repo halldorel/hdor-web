@@ -108,23 +108,29 @@ li {
   display: flex;
   flex-direction: horizontal;
   margin: 0;
-  padding: 1rem 0;
+  padding-top: 1.2rem;
+  padding-left: 3px;
+  float: left;
 }
 
 .social-media-list li {
   height: auto;
-
+  margin-right: 2rem;
 }
 
 .social-media-list .svg-icon {
+  max-width: 20px;
+  max-height: 20px;
+}
 
-  max-width: 32px;
-  max-height: 32px;
+.svg-icon {
+  transform: scale(1.2);
 }
 
 span.username {
   display: none;
 }
+
 
 /********/
 

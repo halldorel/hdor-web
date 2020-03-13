@@ -1,13 +1,15 @@
 <section class="cluster">
     <ul class="box">
-        {% for project in site.projects | sort: "date", "last" %}
+        {% assign sorted = (site.projects | sort: 'date') | reverse %}
+        {% for project in sorted %}
         <li class="box stack">
             <a href="{{ project.url }}">
                 <h2>{{ project.title }}</h2>
-                <img style="background-image: url('{{ project.cover_photo }}')" />
+                <img style="background-image: url('{{ project.cover_photo }}')" /> 
                 <p>
                     {{ project.excerpt }}
                 </p>
+                <span>{{ project.categories | join: ', ' }}</span>
             </a>
         </li>
         {% endfor %}

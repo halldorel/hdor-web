@@ -1,13 +1,13 @@
 ---
 layout: project
 title:  "EFI for MIDI controlled organ"
-date:   2019-06-08 12:40:17 +0000
+date:   2019-06-08
 categories: composition music
 cover_photo: /assets/img/efi.jpg
 excerpt: 'The church organ in Hallgrímskirkja consists of 5725 pipes, and they are computer controllable. I wrote this piece with the goal to create impossible soundscapes.'
 ---
 
-EFI was written over a period of three weeks in May / June in 2019. I was asked to write a short piece for the MIDI controller Klais pipe organ in Hallgrímskirkja. The organ itself is a beautiful construction, built by the Johannes Klais Orgelbau in Bonn and installed in 1992.
+EFI was written over a period of three weeks in May / June in 2019. I was asked to write a short piece for the MIDI controller Klais pipe organ in Hallgrímskirkja at <a href="https://kirkjulistahatid.is/en/halldor-eldjarn/">Kirkjulistahátíð</a>. The organ itself is a beautiful construction, built by the Johannes Klais Orgelbau in Bonn and installed in 1992.
 
 The piece is in three movements. The first movement begins with a repeated ostenato of clusters of notes being played, quickly fading to a deep drone intro. On top of that layers of pipe relay sounds start to emerge but what is heard are recordings from the insides of the organ, air flow to the pipes being opened and closed but no air is sent through the pipes. Suddenly the mechanics start to sync in rhythm revealing the mechanical nature of the instrument.
 

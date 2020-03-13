@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "STRATUS"
-date:   2018-03-29 12:40:17 +0000
+date:   2018-03-29
 categories: project collaboration
 cover_photo: /assets/img/stratus.jpg
 cover_video: /assets/vid/stratus.mov
