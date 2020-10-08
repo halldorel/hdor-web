@@ -110,7 +110,6 @@ li {
   margin: 0;
   padding-top: 1.2rem;
   padding-left: 3px;
-  float: left;
 }
 
 .social-media-list li {
@@ -348,11 +347,37 @@ h1.post-title {
   margin: 1rem 0;
 }
 
-
-
 .cover-photo {
   width: 100%;
   padding-top: 60%;
   background-size: 100%;
   background-position: center;
+}
+
+.fullwidth {
+  width: 100vw;
+  clear: both;
+}
+
+.about p{
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 1.2em 0;
+}
+
+.about .image {
+  display: block;
+  background-position: center 57%;
+  background-size: fill;
+  background-repeat: no-repeat;
+  padding-top: 66%;
+  max-height: 500px;
+  max-width: 960px;
+  width: calc(100vw - 50px);
+}
+
+.about a {
+  background: #000;
+  color: #fff;
+  padding: 1px 3px;
 }

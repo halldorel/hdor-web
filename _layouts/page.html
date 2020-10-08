@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
-<header class="cover-photo" style="background-image: url('{{ page.cover_photo }}')"></header>
+
+{% if page.cover_photo %}
+	<header class="cover-photo" style="background-image: url('{{ page.cover_photo }}')"></header>
+{% endif %}
 
 <article class="post">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+  <h1 class="post-title">{{ page.title | escape }}</h1>
 
   <div class="post-content">
     {{ content }}
   </div>
 
-  
     {% include mailing.html %}
 
 </article>
