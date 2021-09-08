@@ -8,6 +8,7 @@ cover_photo: /assets/img/plant-printer.jpg
 excerpt: 'The inorganic plant is a device that prints out algorithmically generated plant on a strip of paper, depending on the amount of sunlight.'
 ---
 
+<iframe width="560" height="560" src="https://www.youtube.com/embed/FlhBOY4yIow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 A machine that acts and grows like a hanging plant. Equipped with a thermal printer and a light sensor, runs on electricity and is controlled by light. Each day, a few centimeters of plant are slowly printed out. The amount of light dictates how many and how big the leaves on the plant grow.
 
